@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="javascript/script.js"></script>
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <div class="shopp-cart">
+        <h1> Shopping Cart </h1>
+        <div class="menu">
+            <ul class="menu-items">
+                <li>Product</li>
+                <li>Description</li>
+                <li>Quantity</li>
+                <li>Price</li>
+            </ul>
+        </div>
+        <div class="products">
+            <ul id="livres" class="products-items">
+                <li id="livre1" class="product-item">
+                    <div class="livre-description">
+                        <img src="images/une-pluie-detincelles.PNG" class="livre-photo" alt="">
+                        <p>Une pluie d'etincelles<br> <strong>Tamara McKinley</strong></p>
+                        <div class="quantity">
+                            <i class="fas fa-minus" onclick="down()"></i>
+                            <input type="text" id="nbre" value="0" readonly />
+                            <i class="fas fa-plus" onclick="up()"></i>
+                        </div>
+                        <div>
+                            <input type="text" class="prix" id="prix" value="0" readonly />
+                            €
+                        </div>
+                        <i id="heart" class="fas fa-heart" onclick="heart()"></i>
+                    </div>
+                    <i id="close" class="fas fa-times" onclick="remove()"></i>
+                </li>
+                <li id="livre2" class="product-item">
+                    <div class="livre-description">
+                        <img src="images/etoiles-dans-le-ciel-du-sud.PNG" class="livre-photo" alt="">
+                        <p>Etoiles dans le ciel du sud<br><strong>Elizabeth Haran</strong></p>
+                        <div class="quantity">
+                            <i class="fas fa-minus" onclick="downL2()"></i>
+                            <input type="text" id="nbreL2" value="0" readonly />
+                            <i class="fas fa-plus" onclick="upL2()"></i>
+                        </div>
+                        <div>
+                            <input type="text" class="prix" id="prixL2" value="0" readonly />
+                            €
+                        </div>
+                        <i id="heartL2" class="fas fa-heart" onclick="heartL2()"></i>
+                    </div>
+                    <i id="closeL2" class="fas fa-times" onclick="removeL2()"></i>
+                </li>
+
+                <li id="livre3" class="product-item">
+                    <div class="livre-description">
+                        <img src="images/messagere-des-anges.PNG" class="livre-photo" alt="">
+                        <p>Messagere des anges<br> <strong>Marie Bernadette Dupuy</strong></p>
+                        <div class="quantity">
+                            <i class="fas fa-minus" onclick="downL3()"></i>
+                            <input type="text" id="nbreL3" value="0" readonly />
+                            <i class="fas fa-plus" onclick="upL3()"></i>
+                        </div>
+                        <div>
+                            <input type="text" class="prix" id="prixL3" value="0" readonly />
+                            €
+                        </div>
+                        <i id="heartL3" class="fas fa-heart" onclick="heartL3()"></i>
+                    </div>
+                    <i id="closeL3" class="fas fa-times" onclick="removeL3()"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="total-price">
+            <p>Total price</p>
+            <div>
+                <input type="text" class="prix" id="prixtot" value="0" readonly />
+                €
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

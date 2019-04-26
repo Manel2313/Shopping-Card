@@ -1,0 +1,131 @@
+body{
+    background-image: url("../images/book.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #fbfdff;
+    text-shadow: 0 0 8px #000000;
+}
+.shopp-cart{
+    margin: 30px 10%;
+}
+.menu{
+    background-color: #eaeaea;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px #4a4a4a;
+}
+.menu-items{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 259px 10px 104px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.products{
+    background-color: #f1f1f1d9;
+    border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px #4a4a4a;
+}
+.products-items{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    padding: 10px 55px;
+}
+
+.product-item{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c1c1c1;
+}
+.product-item p{
+    font-size: 18px;
+    width: 200px;
+}
+.livre-photo{
+    box-shadow: -1px 1px 11px 3px #a29999;
+    padding: 5px;
+    margin: 5px;
+
+}
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 65px;
+    font-size: 22px;
+    background: #051201;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 9px 4px #ffffff;
+    align-items: center;
+}
+
+.quantity{
+    display: flex;
+    align-items: center;
+}
+.plus-minus{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+input{
+    width: 20px;
+    margin: 0 5px;
+    padding: 6px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.prix{
+    border:none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    text-align: end;
+    width: 40px;
+}
+
+#heart{
+    font-size: 23px;
+    cursor: pointer;
+}
+#heartL2{
+    font-size: 23px;
+    cursor: pointer;
+}
+#heartL3{
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.livre-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 850px;
+}
+
+#close{
+    font-size: 20px;
+    color: #051201;
+}
+#closeL2{
+    font-size: 20px;
+    color: #051201;
+}
+#closeL3{
+    font-size: 20px;
+    color: #051201;
+}
+
+#prixtot{
+    width: 71px;
+    color: white;
+    font-size: 20px;
+}
